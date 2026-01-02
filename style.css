@@ -1,0 +1,328 @@
+/* --- Variáveis e Reset --- */
+:root {
+    --bg-color: #051024; /* Azul Marinho Profundo */
+    --bg-secondary: #0a1930; /* Azul um pouco mais claro */
+    --text-primary: #ffffff;
+    --text-secondary: #b0b8c4;
+    --gold-primary: #d4af37; /* Dourado Clássico */
+    --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #d4af37 100%);
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; }
+
+/* --- Header & Nav --- */
+.navbar {
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--gold-primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+}
+
+.nav-links a:hover {
+    color: var(--gold-primary);
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #0e2240 0%, var(--bg-color) 70%);
+}
+
+.logo-placeholder {
+    margin-bottom: 20px;
+}
+
+.main-logo {
+    width: 150px;
+    height: auto;
+}
+
+.main-icon {
+    font-size: 80px;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.btn-gold {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 1px solid var(--gold-primary);
+    color: var(--gold-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background: var(--gold-primary);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+/* --- Sections General --- */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: var(--gold-primary);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--gold-primary);
+    margin: 20px auto 0;
+}
+
+/* --- Services --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.service-card {
+    background: var(--bg-secondary);
+    padding: 40px;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold-primary);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--gold-primary);
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.service-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* --- Pecunia Section --- */
+.section-highlight {
+    background: linear-gradient(to right, var(--bg-secondary) 50%, var(--bg-color) 50%);
+}
+
+.split-layout {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.split-layout > div {
+    flex: 1;
+}
+
+.badge {
+    background: var(--gold-primary);
+    color: var(--bg-color);
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.text-content h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.text-content h3 {
+    font-family: var(--font-body);
+    font-weight: 300;
+    color: var(--gold-primary);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.feature-list {
+    margin-top: 30px;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+}
+
+.feature-list i {
+    color: var(--gold-primary);
+    margin-right: 10px;
+}
+
+.mockup-box {
+    width: 100%;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.mockup-icon {
+    font-size: 5rem;
+    color: rgba(255,255,255,0.2);
+    margin-bottom: 20px;
+}
+
+/* --- Footer --- */
+footer {
+    background: #020812;
+    padding: 80px 0 20px;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.footer-brand h2 {
+    font-family: var(--font-heading);
+    color: var(--gold-primary);
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.footer-info h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+}
+
+.footer-info i {
+    color: var(--gold-primary);
+    width: 25px;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* Simplificado para mobile */
+    .hero h1 { font-size: 2.2rem; }
+    .split-layout { flex-direction: column; }
+    .section-highlight { background: var(--bg-secondary); }
+    .footer-content { flex-direction: column; text-align: center; }
+}
