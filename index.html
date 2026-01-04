@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nogueira | Software and Data Solutions</title>
-    <meta name="description" content="Soluções premium em desenvolvimento de software, integrações e Business Intelligence.">
+    <meta name="description" content="Premium software development, integrations, and BI solutions.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,45 +15,74 @@
 
     <header class="hero">
         <nav class="navbar">
-            <div class="container">
+            <div class="container nav-container">
                 <a href="#" class="brand">NOGUEIRA</a>
-                <ul class="nav-links">
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#pecunia">Pecunia</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
+                
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#services"><span class="lang-en">Services</span><span class="lang-pt">Serviços</span></a></li>
+                        <li><a href="#pecunia">Pecunia</a></li>
+                        <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-pt">Contato</span></a></li>
+                    </ul>
+                    
+                    <div class="lang-switcher">
+                        <button onclick="setLanguage('en')" id="btn-en" class="lang-btn active">🇺🇸 EN</button>
+                        <span class="divider">|</span>
+                        <button onclick="setLanguage('pt')" id="btn-pt" class="lang-btn">🇧🇷 PT</button>
+                    </div>
+                </div>
             </div>
         </nav>
 
         <div class="hero-content container">
             <div class="logo-placeholder">
-    <img src="logo4.png" alt="Nogueira Software and Data Solutions Logo" class="main-logo">
-</div>
-
-            <h1>Software and Data Solutions</h1>
-            <p class="tagline">Transformando complexidade em elegância digital.</p>
-            <a href="#contact" class="btn-gold">Fale Conosco</a>
+                <img src="logo4.png" alt="Nogueira Software and Data Solutions Logo" class="main-logo">
+            </div>
+            
+            <p class="tagline">
+                <span class="lang-en">Transforming complexity into digital elegance.</span>
+                <span class="lang-pt">Transformando complexidade em elegância digital.</span>
+            </p>
+            <a href="#contact" class="btn-gold">
+                <span class="lang-en">Get in Touch</span>
+                <span class="lang-pt">Fale Conosco</span>
+            </a>
         </div>
     </header>
 
     <section id="services" class="section-dark">
         <div class="container">
-            <h2 class="section-title">Nossa Expertise</h2>
+            <h2 class="section-title">
+                <span class="lang-en">Our Expertise</span>
+                <span class="lang-pt">Nossa Expertise</span>
+            </h2>
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-code service-icon"></i>
-                    <h3>Desenvolvimento de Software</h3>
-                    <p>Criação de aplicações web e mobile robustas, focadas em escalabilidade, segurança e experiência do usuário impecável.</p>
+                    <h3>
+                        <span class="lang-en">Software Development</span>
+                        <span class="lang-pt">Desenvolvimento de Software</span>
+                    </h3>
+                    <p class="lang-en">Building robust web and mobile applications focused on scalability, security, and flawless user experience.</p>
+                    <p class="lang-pt">Criação de aplicações web e mobile robustas, focadas em escalabilidade, segurança e experiência do usuário impecável.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-network-wired service-icon"></i>
-                    <h3>Integrações de Sistemas</h3>
-                    <p>Conectamos seus ecossistemas digitais. APIs eficientes que garantem o fluxo contínuo de dados entre suas ferramentas.</p>
+                    <h3>
+                        <span class="lang-en">System Integrations</span>
+                        <span class="lang-pt">Integração de Sistemas</span>
+                    </h3>
+                    <p class="lang-en">Connecting your digital ecosystems. Efficient APIs ensuring continuous data flow between your tools.</p>
+                    <p class="lang-pt">Conectamos seus ecossistemas digitais. APIs eficientes que garantem o fluxo contínuo de dados entre suas ferramentas.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-chart-line service-icon"></i>
-                    <h3>Business Intelligence (BI)</h3>
-                    <p>Transformamos dados brutos em insights estratégicos. Dashboards interativos para tomadas de decisão assertivas.</p>
+                    <h3>
+                        <span class="lang-en">Business Intelligence (BI)</span>
+                        <span class="lang-pt">Business Intelligence (BI)</span>
+                    </h3>
+                    <p class="lang-en">Transforming raw data into strategic insights. Interactive dashboards for assertive decision-making.</p>
+                    <p class="lang-pt">Transformamos dados brutos em insights estratégicos. Dashboards interativos para tomadas de decisão assertivas.</p>
                 </div>
             </div>
         </div>
@@ -62,20 +91,42 @@
     <section id="pecunia" class="section-highlight">
         <div class="container split-layout">
             <div class="text-content">
-                <span class="badge">Em Breve</span>
+                <span class="badge">
+                    <span class="lang-en">Coming Soon</span>
+                    <span class="lang-pt">Em Breve</span>
+                </span>
                 <h2>Pecunia</h2>
-                <h3>Inteligência Financeira Pessoal</h3>
-                <p>O futuro do controle financeiro está chegando. O <strong>Pecunia</strong> é uma solução inovadora projetada para rastrear seus gastos e calcular sua inflação pessoal através da leitura inteligente de QR Codes de notas fiscais.</p>
-                <ul class="feature-list">
-                    <li><i class="fas fa-check"></i> Controle de gastos automatizado</li>
-                    <li><i class="fas fa-check"></i> Análise de inflação pessoal</li>
-                    <li><i class="fas fa-check"></i> Design intuitivo e seguro</li>
-                </ul>
+                <h3>
+                    <span class="lang-en">Personal Financial Intelligence</span>
+                    <span class="lang-pt">Inteligência Financeira Pessoal</span>
+                </h3>
+                
+                <div class="lang-en">
+                    <p>The future of financial control is coming. <strong>Pecunia</strong> is an innovative solution designed to track your expenses and calculate your personal inflation by intelligently scanning receipt QR Codes.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Automated expense tracking</li>
+                        <li><i class="fas fa-check"></i> Personal inflation analysis</li>
+                        <li><i class="fas fa-check"></i> Intuitive and secure design</li>
+                    </ul>
+                </div>
+
+                <div class="lang-pt">
+                    <p>O futuro do controle financeiro está chegando. O <strong>Pecunia</strong> é uma solução inovadora projetada para rastrear seus gastos e calcular sua inflação pessoal através da leitura inteligente de QR Codes de notas fiscais.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Controle de gastos automatizado</li>
+                        <li><i class="fas fa-check"></i> Análise de inflação pessoal</li>
+                        <li><i class="fas fa-check"></i> Design intuitivo e seguro</li>
+                    </ul>
+                </div>
+
             </div>
             <div class="image-content">
                 <div class="mockup-box">
                     <i class="fas fa-mobile-alt mockup-icon"></i>
-                    <p>Disponível em breve nas lojas</p>
+                    <p>
+                        <span class="lang-en">Available soon on stores</span>
+                        <span class="lang-pt">Disponível em breve nas lojas</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -88,16 +139,61 @@
                 <p>Software and Data Solutions</p>
             </div>
             <div class="footer-info">
-                <h3>Entre em Contato</h3>
+                <h3>
+                    <span class="lang-en">Get in Touch</span>
+                    <span class="lang-pt">Entre em Contato</span>
+                </h3>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:contato@nogueirasds.com">contato@nogueirasds.com</a></p>
                 <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511954374601" target="_blank">+55 11 95437-4601</a></p>
                 <p class="location"><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</p>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2026 Nogueira Software and Data Solutions. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Nogueira Software and Data Solutions. 
+                <span class="lang-en">All rights reserved.</span>
+                <span class="lang-pt">Todos os direitos reservados.</span>
+            </p>
         </div>
     </footer>
+
+    <script>
+        function setLanguage(lang) {
+            // Salva a preferência
+            localStorage.setItem('preferredLanguage', lang);
+
+            // Atualiza classes de visibilidade
+            const ptElements = document.querySelectorAll('.lang-pt');
+            const enElements = document.querySelectorAll('.lang-en');
+
+            if (lang === 'pt') {
+                ptElements.forEach(el => el.style.display = 'inline-block'); // ou block dependendo do contexto, mas inline-block é seguro pra span
+                enElements.forEach(el => el.style.display = 'none');
+                
+                // Ajustes específicos de bloco
+                document.querySelectorAll('div.lang-pt, p.lang-pt').forEach(el => el.style.display = 'block');
+                
+                document.getElementById('btn-pt').classList.add('active');
+                document.getElementById('btn-en').classList.remove('active');
+                document.documentElement.lang = "pt-BR";
+            } else {
+                ptElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = 'inline-block');
+                
+                // Ajustes específicos de bloco
+                document.querySelectorAll('div.lang-en, p.lang-en').forEach(el => el.style.display = 'block');
+
+                document.getElementById('btn-en').classList.add('active');
+                document.getElementById('btn-pt').classList.remove('active');
+                document.documentElement.lang = "en";
+            }
+        }
+
+        // Carregar idioma ao iniciar
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            setLanguage(savedLang);
+        });
+    </script>
 
 </body>
 </html>
