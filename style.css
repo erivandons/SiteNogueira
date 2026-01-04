@@ -86,12 +86,21 @@ ul { list-style: none; }
 }
 
 .logo-placeholder {
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Um pouco mais de espaço abaixo da logo */
+    /* Define um tamanho máximo muito maior para telas grandes */
+    max-width: 400px;
+    /* Garante que em telas menores ela não ultrapasse 90% da largura */
+    width: 90%;
+    /* Centraliza o container horizontalmente */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-logo {
-    width: 150px;
-    height: auto;
+    /* A imagem agora vai ocupar todo o espaço do container definido acima */
+    width: 100%;
+    height: auto; /* Mantém a proporção correta */
+    display: block; /* Remove espaçamentos indesejados de imagens inline */
 }
 
 .main-icon {
