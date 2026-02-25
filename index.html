@@ -1,10 +1,23 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nogueira | Software and Data Solutions</title>
-    <meta name="description" content="Premium software development, integrations, and BI solutions.">
+    <title>Nogueira | Software, Dados e Automação com IA</title>
+    <meta name="description" content="Desenvolvimento de software, integrações, BI e automações com IA. Soluções digitais e produtos como PecuniaOne e WhatsApp Virtual Seller.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://nogueirasds.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Nogueira Software and Data Solutions">
+    <meta property="og:title" content="Nogueira | Software, Dados e Automação com IA">
+    <meta property="og:description" content="Desenvolvimento de software, integrações, BI e automações com IA. Conheça o PecuniaOne e o WhatsApp Virtual Seller.">
+    <meta property="og:url" content="https://nogueirasds.com/">
+    <meta property="og:image" content="https://nogueirasds.com/logo4.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nogueira | Software, Dados e Automação com IA">
+    <meta name="twitter:description" content="Software, dados, BI e automação com IA para empresas e novos produtos digitais.">
+    <meta name="twitter:image" content="https://nogueirasds.com/logo4.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +25,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Nogueira Software and Data Solutions",
+            "url": "https://nogueirasds.com/",
+            "email": "contato@nogueirasds.com",
+            "telephone": "+55 11 95437-4601",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "São Paulo",
+                "addressCountry": "BR"
+            },
+            "sameAs": [
+                "https://pecunia.one/",
+                "https://app.pecunia.one/"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "PecuniaOne",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser, Android, iOS",
+            "url": "https://pecunia.one/",
+            "downloadUrl": "https://app.pecunia.one/",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "BRL"
+            },
+            "description": "Controle financeiro pessoal com leitura de QR Code NFC-e, importação OFX e análise com IA."
+        }
+    </script>
 
     <header class="hero">
         <nav class="navbar">
@@ -39,6 +88,10 @@
             <div class="logo-placeholder">
                 <img src="logo4.png" alt="Nogueira Software and Data Solutions Logo" class="main-logo">
             </div>
+            <h1>
+                <span class="lang-en">Software, Data and AI Automation</span>
+                <span class="lang-pt">Software, Dados e Automação com IA</span>
+            </h1>
             
             <p class="tagline">
                 <span class="lang-en">Transforming complexity into digital elegance.</span>
@@ -51,6 +104,7 @@
         </div>
     </header>
 
+    <main>
     <section id="services" class="section-dark">
         <div class="container">
             <h2 class="section-title">
@@ -189,6 +243,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <footer id="contact">
         <div class="container footer-content">
@@ -248,7 +303,7 @@
 
         // Carregar idioma ao iniciar
         document.addEventListener('DOMContentLoaded', () => {
-            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            const savedLang = localStorage.getItem('preferredLanguage') || 'pt';
             setLanguage(savedLang);
         });
     </script>

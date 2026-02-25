@@ -127,8 +127,8 @@ ul { list-style: none; }
     .logo-placeholder { max-width: 90%; }
 }
 
-/* Esconde o idioma não selecionado por padrão para evitar piscar */
-.lang-pt { display: none; }
+/* Esconde o idioma não selecionado por padrão para evitar piscar (PT como padrão) */
+.lang-en { display: none; }
 /* --- Hero Section --- */
 .hero {
     height: 100vh;
